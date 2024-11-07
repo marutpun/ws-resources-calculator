@@ -2,10 +2,10 @@ import * as React from 'react';
 import type { InitDefs, ResourceDefs } from './defs/type.tsx';
 
 const resourceList: ResourceDefs[] = [
-  { name: 'meat', rate: 1 },
-  { name: 'wood', rate: 1 },
-  { name: 'coal', rate: 0.2 },
-  { name: 'iron', rate: 0.05 },
+  { name: 'meat', rate: 1, icon: '🥩'},
+  { name: 'wood', rate: 1, icon: '🪵' },
+  { name: 'coal', rate: 0.2, icon: '⚫' },
+  { name: 'iron', rate: 0.05, icon: '🪨' },
 ];
 
 const initialValues: InitDefs = {
@@ -34,9 +34,7 @@ export default function App() {
 
   return (
     <main className="container">
-      <h1 className="text-center">Whiteout Survival Resources Ratio Calculator</h1>
-      <div className="d-flex flex-column justify-content-center align-items-center">
-        <table className="table table-bordered" style={{ maxWidth: '40rem' }}>
+        <table className="table table-bordered">
           <thead>
             <tr>
               <th scope="col" className="text-center w-25">
@@ -55,11 +53,11 @@ export default function App() {
           </thead>
           <tbody>
             {resourceList.map((resource: ResourceDefs) => {
-              const { name, rate } = resource;
+              const { name, rate, icon } = resource;
               const fullNameCaps: string = name.charAt(0).toUpperCase() + name.slice(1);
               return (
                 <tr key={name}>
-                  <td>{fullNameCaps}</td>
+                  <td>{fullNameCaps} {icon}</td>
                   <td>{(goal * rate).toLocaleString()}</td>
                   <td>
                     <label htmlFor={name + 'Input'} className="visually-hidden">
@@ -73,7 +71,6 @@ export default function App() {
             })}
           </tbody>
         </table>
-      </div>
     </main>
   );
 }

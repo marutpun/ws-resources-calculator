@@ -8,4 +8,5 @@ export interface InitDefs {
 export interface ResourceDefs {
   name: string;
   rate: number;
+  icon: string;
 }
