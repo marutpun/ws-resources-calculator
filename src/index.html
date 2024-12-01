@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whiteout Survival Resources Calculator</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="visually-hidden">Whiteout Survival Resources Calculator</h1>
+    <main class="container">
+      <section class="vh-100 d-flex flex-column flex-wrap">
+        <div class="row flex-fill border border-black">
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Type</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Goal</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Amount</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Ratio</p></div>
+        </div>
+        <div class="row flex-fill border border-black border-top-0">
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Meat</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">1,000</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <label for="inputMeat" class="visually-hidden">Meat</label>
+            <input type="text" class="form-control" id="inputMeat" inputmode="numeric" pattern="[0-9]*" placeholder="Meet" />
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0" id="percentageMeat"></p></div>
+        </div>
+        <div class="row flex-fill border border-black border-top-0">
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Wood</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">1,000</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <label for="inputWood" class="visually-hidden">Wood</label>
+            <input type="text" class="form-control" id="inputWood" inputmode="numeric" pattern="[0-9]*" placeholder="Wood" />
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0" id="percentageWood"></p></div>
+        </div>
+        <div class="row flex-fill border border-black border-top-0">
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Coal</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">200</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <label for="inputCoal" class="visually-hidden">Coal</label>
+            <input type="text" class="form-control" id="inputCoal" inputmode="numeric" pattern="[0-9]*" placeholder="Coal" />
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0" id="percentageCoal"></p></div>
+        </div>
+        <div class="row flex-fill border border-black border-top-0">
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">Iron</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0">50</p></div>
+          <div class="col-3 d-flex justify-content-center align-items-center">
+            <label for="inputIron" class="visually-hidden">Iron</label>
+            <input type="text" class="form-control" id="inputIron" inputmode="numeric" pattern="[0-9]*" placeholder="Iron" />
+          </div>
+          <div class="col-3 d-flex justify-content-center align-items-center"><p class="h5 mb-0" id="percentageIron"></p></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
