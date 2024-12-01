@@ -6,6 +6,10 @@
     "build": "gulp build"
   },
   "devDependencies": {
+<<<<<<< HEAD
+=======
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+>>>>>>> 5d713f55f02cba7f3acd3fafde2f25432affdd89
     "browser-sync": "^3.0.3",
     "cssnano": "^7.0.6",
     "gulp": "^5.0.0",

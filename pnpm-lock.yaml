@@ -12,6 +12,12 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
     devDependencies:
+<<<<<<< HEAD
+=======
+      '@fullhuman/postcss-purgecss':
+        specifier: ^7.0.2
+        version: 7.0.2(postcss@8.4.49)
+>>>>>>> 5d713f55f02cba7f3acd3fafde2f25432affdd89
       browser-sync:
         specifier: ^3.0.3
         version: 3.0.3
@@ -33,6 +39,14 @@ importers:
 
 packages:
 
+<<<<<<< HEAD
+=======
+  '@fullhuman/postcss-purgecss@7.0.2':
+    resolution: {integrity: sha512-U4zAXNaVztbDxO9EdcLp51F3UxxYsb/7DN89rFxFJhfk2Wua2pvw2Kf3HdspbPhW/wpHjSjsxWYoIlbTgRSjbQ==}
+    peerDependencies:
+      postcss: ^8.0.0
+
+>>>>>>> 5d713f55f02cba7f3acd3fafde2f25432affdd89
   '@gulpjs/messages@1.1.0':
     resolution: {integrity: sha512-Ys9sazDatyTgZVb4xPlDufLweJ/Os2uHWOv+Caxvy2O85JcnT4M3vc73bi8pdLWlv3fdWQz3pdI9tVwo8rQQSg==}
     engines: {node: '>=10.13.0'}
@@ -1453,6 +1467,7 @@ packages:
 
 snapshots:
 
+<<<<<<< HEAD
   '@gulpjs/messages@1.1.0': {}
 
   '@gulpjs/to-absolute-glob@4.0.0':
@@ -1495,6 +1510,55 @@ snapshots:
 
   ansi-regex@5.0.1: {}
 
+=======
+  '@fullhuman/postcss-purgecss@7.0.2(postcss@8.4.49)':
+    dependencies:
+      postcss: 8.4.49
+      purgecss: 7.0.2
+
+  '@gulpjs/messages@1.1.0': {}
+
+  '@gulpjs/to-absolute-glob@4.0.0':
+    dependencies:
+      is-negated-glob: 1.0.0
+
+  '@isaacs/cliui@8.0.2':
+    dependencies:
+      string-width: 5.1.2
+      string-width-cjs: string-width@4.2.3
+      strip-ansi: 7.1.0
+      strip-ansi-cjs: strip-ansi@6.0.1
+      wrap-ansi: 8.1.0
+      wrap-ansi-cjs: wrap-ansi@7.0.0
+
+  '@popperjs/core@2.11.8': {}
+
+  '@socket.io/component-emitter@3.1.2': {}
+
+  '@trysound/sax@0.2.0': {}
+
+  '@types/cookie@0.4.1': {}
+
+  '@types/cors@2.8.17':
+    dependencies:
+      '@types/node': 22.10.1
+
+  '@types/node@22.10.1':
+    dependencies:
+      undici-types: 6.20.0
+
+  accepts@1.3.8:
+    dependencies:
+      mime-types: 2.1.35
+      negotiator: 0.6.3
+
+  ansi-colors@1.1.0:
+    dependencies:
+      ansi-wrap: 0.1.0
+
+  ansi-regex@5.0.1: {}
+
+>>>>>>> 5d713f55f02cba7f3acd3fafde2f25432affdd89
   ansi-regex@6.1.0: {}
 
   ansi-styles@4.3.0:
