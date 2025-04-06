@@ -1,23 +1,14 @@
 {
-  "name": "ws-resources-ratio",
-  "version": "2.0.0",
+  "name": "ws-resources-calculator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "gulp",
-    "build": "gulp build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-<<<<<<< HEAD
-=======
-    "@fullhuman/postcss-purgecss": "^7.0.2",
->>>>>>> 5d713f55f02cba7f3acd3fafde2f25432affdd89
-    "browser-sync": "^3.0.3",
-    "cssnano": "^7.0.6",
-    "gulp": "^5.0.0",
-    "gulp-postcss": "^10.0.0",
-    "gulp-purgecss": "^7.0.2",
-    "postcss": "^8.4.49"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3"
+    "vite": "^6.2.0"
   }
 }
